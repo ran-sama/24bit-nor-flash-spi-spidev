@@ -85,7 +85,7 @@ if __name__ == "__main__":
     if mid != W25Q64_MID or device_id != W25Q64_DID:
         print("SPI Flash is not Winbond W25Q64")
         sys.exit()
-    with open("4allones", "rb") as fp:
+    with open("8allones", "rb") as fp:
         write_chip(fp.read())
-    with open("testoutput", "wb") as fp:
+    with open("8onesverify", "wb") as fp:
         fp.write(read_chip())
