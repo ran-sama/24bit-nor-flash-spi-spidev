@@ -87,5 +87,5 @@ if __name__ == "__main__":
         sys.exit()
     with open("4allones", "rb") as fp:
         write_chip(fp.read())
-    with open("testoutput", "wb") as fp:
+    with open("4onesverify", "wb") as fp:
         fp.write(read_chip())
